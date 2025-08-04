@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/c++,c,python,jupyternotebooks,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,c,python,jupyternotebooks,visualstudiocode
 
+Algorithm,DS/inflearn_algo_basic/인프런 코딩테스트/
+*.cph
+
 ### C ###
 # Prerequisites
 *.d
@@ -276,3 +279,4 @@ pyrightconfig.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,c,python,jupyternotebooks,visualstudiocode
+Algorithm,DS/inflearn_algo_basic/1/.cph/.1.c_7eecb397668a8f98bb55876d886cb0da.prob
