@@ -7,7 +7,7 @@ using namespace std;
     @parm : n(int) -> input num
     @return : sum(int) -> sum of each digit
 */
-int digit_sum(int n)
+int digitSum(int n)
 {
     int sum = 0;
     int temp_n = n;
@@ -29,7 +29,7 @@ int main()
     {
         int temp_input;
         cin >> temp_input;
-        int temp = digit_sum(temp_input);
+        int temp = digitSum(temp_input);
         if (temp > digit_s)
         {
             digit_s = temp;
