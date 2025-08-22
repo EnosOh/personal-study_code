@@ -144,8 +144,7 @@
 ```
 import logging
 
-
-logging.basicConfig(level=logging.DEBUG, format='%(levelname)s: %(message)s')
+logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
 
 def process_data(data):
     logging.debug(f"데이터 처리 시작: data = {data}")
