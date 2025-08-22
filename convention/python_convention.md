@@ -138,3 +138,32 @@
 * **EAFP (Easier to Ask for Forgiveness than Permission):** 예외 처리를 적극적으로 활용합니다. (예: `try-except` 블록)
 * **LBYL (Look Before You Leap):** 사전에 조건을 검사하여 오류를 방지합니다. (예: `if os.path.exists(path):`)
 * **Type Hinting:** Python 3.5+부터 도입된 타입 힌트를 사용하여 코드의 가독성과 유지보수성을 높입니다.
+
+## 디버깅 
+
+```
+import logging
+
+
+logging.basicConfig(level=logging.DEBUG, format='%(levelname)s: %(message)s')
+
+def process_data(data):
+    logging.debug(f"데이터 처리 시작: data = {data}")
+    
+    result = None
+    try:
+        # 데이터 처리 로직
+        result = data * 2
+        logging.info(f"데이터 처리 성공: result = {result}")
+    except Exception as e:
+        logging.error(f"데이터 처리 중 오류 발생: {e}")
+        
+    logging.debug("데이터 처리 종료")
+    return result
+
+# --- 실행 ---
+process_data(10)
+print("-" * 20)
+process_data("text")
+
+```
